@@ -10,7 +10,7 @@ class User
     }
     public function getUsers()
     {
-        $this->db->query("SELCT * FROM users");
+        $this->db->query("SELECT * FROM users");
         $result = $this->db->resultSet();
         return $result;
     }
